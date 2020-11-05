@@ -11,6 +11,10 @@ public class Host {
     private String ip;
     private int port = -1;
 
+    //added
+    private DatagramSocket socket;
+    //added
+
     public boolean populate(String idString, String ipString, String portString) {
         try {
             id = Integer.parseInt(idString);
